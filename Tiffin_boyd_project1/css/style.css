@@ -1,0 +1,89 @@
+/* 
+CSS Style Sheet
+Project 4
+Boyd Tiffin
+1309 -Visual Frameworks
+*/
+
+
+
+/* General */
+body {
+	background-image: url('../img/Money.png');
+	opacity: 0.8;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100%;
+	background-color: gray;
+}
+
+h1 {
+	font-size: 1.3em;
+	color: white;
+	text-align: center;
+	letter-spacing: .6em;
+	width: 100%;
+}
+
+.headerDiv{
+	width: 100%;
+}
+
+a {
+	
+}
+/* Websites Only, Not Valid on Mobile */
+a:hover{
+	text-decoration: overline;
+}
+
+p{
+	margin: 20px;
+}
+
+li{
+	list-style-type: square;
+}
+/* Wow, a replacement for Comic Sans! My life is complete now... Editorial Comment*/
+label{
+	font-family: fantasy;
+}
+
+input{
+	padding-left: 5px;
+}
+
+form{
+	background: -webkit-linear-gradient(#979797 0%, #ffffff 100%);
+}
+
+legend{
+	color: white;
+	display: none;
+}
+
+fieldset{
+	border: none;
+}
+
+textarea{
+	padding: 10px;
+	
+}
+
+/* ID Specific */
+#butSubmit{
+	font-style: italic;
+	color: fuchsia;
+	background: #36b449;
+	border: 1px solid green;
+}
+#addNew{
+	display: none;
+}
+
+/* Classes */
+
+.required{
+	font-size: .7em;
+}
