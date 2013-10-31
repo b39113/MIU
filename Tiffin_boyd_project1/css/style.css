@@ -9,17 +9,11 @@ Boyd Tiffin
 
 /* General */
 body {
-	background-image: url('../img/Money.png');
-	opacity: 0.8;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	height: 100%;
-	background-color: gray;
 }
 
 h1 {
 	font-size: 1.3em;
-	color: white;
+	color: black;
 	text-align: center;
 	letter-spacing: .6em;
 	width: 100%;
