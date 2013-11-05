@@ -7,7 +7,7 @@
 // Load all content before JS code runs
 window.addEventListener("DOMContentLoaded", function(){
 	// Global Functions
-	function $(x){
+	function aaa(x){
 		var myElement = document.getElementById(x);
 		return myElement;
 	};
@@ -17,14 +17,14 @@ window.addEventListener("DOMContentLoaded", function(){
 	// Array for creating the Select Fields with JS
 	var statusGroup = ["Idea", "Requirements", "Development", "Production"],
 	itemTypeValue = false,
-	errMsg = $('errors');
+	errMsg = aaa('errors');
 	catCreate();
 	
 	
 	// Create Select Field from JS instead of HTML
 	function catCreate(){
 		var myForm = document.getElementsByTagName("form"),
-			selectLi = $('select'), // Get select element into a var
+			selectLi = aaa('select'), // Get select element into a var
 			createSelect = document.createElement('select'); //create a select element
 			createSelect.setAttribute("id", "status"); // create an ID attribute and apply to select tag we created
 		for(var i=0, j=statusGroup.length; i<j; i++){
@@ -64,17 +64,17 @@ window.addEventListener("DOMContentLoaded", function(){
 	function toogleControls(n){
 		switch(n){
 			case "on":
-				$('mySubmit').style.display = "none";
-				$('clearAllLink').style.display = "inline";
-				$('displayLink').style.display = "none";
-				$('addNew').style.display = "inline";
+				aaa('mySubmit').style.display = "none";
+				aaa('clearAllLink').style.display = "inline";
+				aaa('displayLink').style.display = "none";
+				aaa('addNew').style.display = "inline";
 			break;
 			case "off":
-				$('mySubmit').style.display = "block";
-				$('clearAllLink').style.display = "inline";
-				$('displayLink').style.display = "inline";
-				$('addNew').style.display = "none";
-				$('items').style.display = "none";
+				aaa('mySubmit').style.display = "block";
+				aaa('clearAllLink').style.display = "inline";
+				aaa('displayLink').style.display = "inline";
+				aaa('addNew').style.display = "none";
+				aaa('items').style.display = "none";
 			break;
 			default:
 				return false;
@@ -92,11 +92,11 @@ window.addEventListener("DOMContentLoaded", function(){
 		// Get all form data in an Object
 		getRadios();
 		var idea = {};
-			idea.title = ["Idea Title:", $('ideaTitle').value];
-			idea.importance = ["Importance:", $('importance').value];
-			idea.dateDue = ["Date Due:", $('dateDue').value];
-			idea.description = ["Description:", $('description').value];
-			idea.status = ["Status:", $('status').value];
+			idea.title = ["Idea Title:", aaa('ideaTitle').value];
+			idea.importance = ["Importance:", aaa('importance').value];
+			idea.dateDue = ["Date Due:", aaa('dateDue').value];
+			idea.description = ["Description:", aaa('description').value];
+			idea.status = ["Status:", aaa('status').value];
 			idea.type = ["Type:", itemTypeValue];
 			// Add Radio Check to get value
 		localStorage.setItem(id, JSON.stringify(idea));
@@ -121,10 +121,11 @@ window.addEventListener("DOMContentLoaded", function(){
 		// Display data to user
 		var createDiv = document.createElement('div');
 		createDiv.setAttribute("id", "items");
+		createDiv.setAttribute("data-role", "content");
 		var createList = document.createElement('ul');
 		createDiv.appendChild(createList);
 		document.body.appendChild(createDiv);
-		$('items').style.display = "block";
+		aaa('items').style.display = "block";
 		for(var i=0, j=localStorage.length; i<j; i++){
 			var createLi = document.createElement('li');
 			var createLinks = document.createElement('li');
@@ -189,11 +190,11 @@ window.addEventListener("DOMContentLoaded", function(){
 		//Show Form
 		toogleControls("off");
 		console.log(idea);
-		$('ideaTitle').value = idea.title[1];
-		$('importance').value = idea.importance[1];
-		$('dateDue').value = idea.dateDue[1];
-		$('description').value = idea.description[1];
-		$('status').value = idea.status[1];		
+		aaa('ideaTitle').value = idea.title[1];
+		aaa('importance').value = idea.importance[1];
+		aaa('dateDue').value = idea.dateDue[1];
+		aaa('description').value = idea.description[1];
+		aaa('status').value = idea.status[1];		
 /* 		Need Radio Button and/or Checkbox Code */
 		var radioButtons = document.forms[0].ideaType;
 		for(var i=0; i<radioButtons.length; i++){
@@ -208,9 +209,9 @@ window.addEventListener("DOMContentLoaded", function(){
 		// Remove StoreData
 		save.removeEventListener("click", storeData);
 		// Change add to edit
-		$('butSubmit').value = "Edit Idea";
+		aaa('butSubmit').value = "Edit Idea";
 		// Create a listener that will run validate function
-		var editSubmit = $('butSubmit');
+		var editSubmit = aaa('butSubmit');
 		editSubmit.addEventListener("click", validate);
 		// Save key value established as property of edit submit event
 		editSubmit.key = this.key;
@@ -218,10 +219,10 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	function validate(e){
 		// Define scope of validation
-		var getTitle = $('ideaTitle');
-		var getDateDue = $('dateDue');
-		var getDescription = $('description');
-		var getStatus = $('status');
+		var getTitle = aaa('ideaTitle');
+		var getDateDue = aaa('dateDue');
+		var getDescription = aaa('description');
+		var getStatus = aaa('status');
 		var messageAry = [];
 		
 		// Reset Error msg
@@ -292,7 +293,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	};
 	
 	/* Listeners */
-	var save = $('butSubmit');
+	var save = aaa('butSubmit');
 	save.addEventListener("click" , validate);
 	clearAllLink.addEventListener("click", clearAll);
 	displayLink.addEventListener("click", displayData);
