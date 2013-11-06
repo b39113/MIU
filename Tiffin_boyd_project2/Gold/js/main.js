@@ -20,7 +20,6 @@ window.addEventListener("DOMContentLoaded", function(){
 	errMsg = aaa('errors');
 	catCreate();
 	
-	
 	// Create Select Field from JS instead of HTML
 	function catCreate(){
 		var myForm = document.getElementsByTagName("form"),
@@ -189,7 +188,6 @@ window.addEventListener("DOMContentLoaded", function(){
 		var idea = JSON.parse(value);
 		//Show Form
 		toogleControls("off");
-		console.log(idea);
 		aaa('ideaTitle').value = idea.title[1];
 		aaa('importance').value = idea.importance[1];
 		aaa('dateDue').value = idea.dateDue[1];
@@ -292,7 +290,12 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 	};
 	
+	function getSearch(){
+		alert("Function Called");
+	}
+	
 	/* Listeners */
+	var search = aaa('searchBtn');
 	var save = aaa('butSubmit');
 	save.addEventListener("click" , validate);
 	clearAllLink.addEventListener("click", clearAll);

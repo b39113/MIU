@@ -35,9 +35,11 @@
 			<div>
 				<center><a href="additem.html" data-ajax="false"><img src="img/CTA.gif"></a></center>
 			</div>
+			<br />
 <!-- ADD SEARCH BUTTON HERE AND FUNCTIONALITY IN THE MAIN.JS FILES		 -->
 			<div id="cont-search">
-				<input type="search" placeholder="Search Ideas" /><input type="submit" value="Search" />
+				<ul id="prelist" data-inset="true" data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search ideas...">
+				</ul>
 			</div>
 			<ul data-role="listview" data-inset="true">
 				<li data-role="list-divider">Browse By:</li>
@@ -48,8 +50,14 @@
 				<li><a href="#browse">Title</a></li>
 			</ul>
 		</div>
-		<div data-role="footer" data-position="fixed" data-id="home">
-			<h4>Add Nav Bar Here</h4>
+		<div data-role="footer" data-id="navbar" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" class="ui-btn-active" data-icon="star" data-iconpos="top">Home</a></li>
+					<li><a href="#git"  data-icon="gear" data-iconpos="top">Git</a></li>
+					<li><a href="#newsstream"  data-icon="grid" data-iconpos="top">Newsstream</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	
@@ -62,10 +70,56 @@
 		<div data-role="content">
 			<h3>This page not coded yet.</h3>
 		</div>
-		<div data-role="footer" data-position="fixed" data-id="home">
-			<h4>Add Nav Bar Here</h4>
+		<div data-role="footer" data-id="navbar" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="star" data-iconpos="top">Home</a></li>
+					<li><a href="#git"  data-icon="gear" data-iconpos="top">Git</a></li>
+					<li><a href="#newsstream" data-icon="grid" data-iconpos="top">Newsstream</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
+<!-- GIT Page NOT CODED YET -->
+
+	<div data-role="git" id="git" data-add-back-btn="true">	
+		<div data-role="header" data-position="fixed">
+			<h3>GIT Links</h3>
+		</div>
+		<div data-role="content">
+			<h3>My GIT Links</h3>
+		</div>
+		<div data-role="footer" data-id="navbar" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="star" data-iconpos="top">Home</a></li>
+					<li><a href="#git" class="ui-btn-active" data-icon="gear" data-iconpos="top">Git</a></li>
+					<li><a href="#newsstream" data-icon="grid" data-iconpos="top">Newsstream</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- INFO Page NOT CODED YET -->
+
+	<div data-role="newsstream" id="newsstream" data-add-back-btn="true">	
+		<div data-role="header" data-position="fixed">
+			<h3>Browse Ideas</h3>
+		</div>
+		<div data-role="content">
+			<h3>This page not coded yet.</h3>
+		</div>
+		<div data-role="footer" data-id="navbar" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="star" data-iconpos="top">Home</a></li>
+					<li><a href="#git" data-icon="gear" data-iconpos="top">Git</a></li>
+					<li><a href="#newsstream"class="ui-btn-active" data-icon="grid" data-iconpos="top">Newsstream</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
 	
 <!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
