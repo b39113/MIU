@@ -33,22 +33,18 @@
 		</div>
 		<div data-role="content">
 			<div>
-				<center><a href="additem.html" data-ajax="false"><img src="img/CTA.gif"></a></center>
+				<center><a href="additem.html" data-ajax="false"><img src="img/CTA.gif" /></a></center>
 			</div>
 			<br />
-<!-- ADD SEARCH BUTTON HERE AND FUNCTIONALITY IN THE MAIN.JS FILES		 -->
 			<div id="cont-search">
-				<ul id="prelist" data-inset="true" data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search ideas...">
+				<ul id="prelist" data-inset="true" data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search ideas by...">
+					<li><a href="#browse">Money Potential</a></li>
+					<li><a href="#browse">Idea Type</a></li>
+					<li><a href="#browse">Current Status</a></li>
+					<li><a href="#browse">Date Due</a></li>
+					<li><a href="#browse">Title</a></li>
 				</ul>
 			</div>
-			<ul data-role="listview" data-inset="true">
-				<li data-role="list-divider">Browse By:</li>
-				<li><a href="#browse">Money Potential</a></li>
-				<li><a href="#browse">Idea Type</a></li>
-				<li><a href="#browse">Current Status</a></li>
-				<li><a href="#browse">Date Due</a></li>
-				<li><a href="#browse">Title</a></li>
-			</ul>
 		</div>
 		<div data-role="footer" data-id="navbar" data-position="fixed">
 			<div data-role="navbar">
@@ -61,25 +57,6 @@
 		</div>
 	</div>
 	
-<!-- Browse Page NOT CODED YET -->
-
-	<div data-role="page" id="browse" data-add-back-btn="true">	
-		<div data-role="header" data-position="fixed">
-			<h3>Browse Ideas</h3>
-		</div>
-		<div data-role="content">
-			<h3>This page not coded yet.</h3>
-		</div>
-		<div data-role="footer" data-id="navbar" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" data-icon="star" data-iconpos="top">Home</a></li>
-					<li><a href="#git"  data-icon="gear" data-iconpos="top">Git</a></li>
-					<li><a href="#newsstream" data-icon="grid" data-iconpos="top">Newsstream</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
 <!-- GIT Page NOT CODED YET -->
 
 	<div data-role="git" id="git" data-add-back-btn="true">	
@@ -88,6 +65,23 @@
 		</div>
 		<div data-role="content">
 			<h3>My GIT Links</h3>
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#">
+			        <img src="">
+			        <h2>Gold Application</h2>
+			        <p>This is what I think works the best</p></a>
+			    </li>
+				<li><a href="#">
+			        <img src="">
+			        <h2>Bronze Application</h2>
+			        <p>This is demonstrating other views</p></a>
+			    </li>
+				<li><a href="#">
+			        <img src="">
+			        <h2>MIU 1311 Base Folder</h2>
+			        <p>All code for this month resides here</p></a>
+			    </li>
+			</ul>
 		</div>
 		<div data-role="footer" data-id="navbar" data-position="fixed">
 			<div data-role="navbar">
@@ -118,8 +112,6 @@
 			</div>
 		</div>
 	</div>
-
-
 	
 <!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
