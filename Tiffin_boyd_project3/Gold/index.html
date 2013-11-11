@@ -1,0 +1,224 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Idea Logger | by The Sparks Solution</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+<!-- 	<link rel="stylesheet" href="css/style.css" /> -->
+	
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+<!-- Home Page -->	
+
+	<div data-role="page" id="home">
+		<div data-role="header">
+			<h3>Idea Logger</h3>
+		</div>
+		<div data-role="content">
+			<div>
+				<center><a href="additem.html" data-ajax="false"><img src="img/CTA.gif" /></a></center>
+			</div>
+			<br />
+			<div id="cont-search">
+				<ul id="prelist" data-inset="true" data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search ideas by...">
+					<li><a href="#browse">Money Potential</a></li>
+					<li><a href="#browse">Idea Type</a></li>
+					<li><a href="#browse">Current Status</a></li>
+					<li><a href="#browse">Date Due</a></li>
+					<li><a href="#browse">Title</a></li>
+				</ul>
+			</div>
+			<br />
+			<div>
+				<ul data-role="listview" data-inset="true">
+				    <li data-role="list-divider">Browse</li>
+					<li><a href="#browse">Money Potential</a></li>
+					<li><a href="#browse">Idea Type</a></li>
+					<li><a href="#browse">Current Status</a></li>
+					<li><a href="#browse">Date Due</a></li>
+					<li><a href="#browse">Title</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="footer" data-id="navbar" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" class="ui-btn-active" data-icon="star" data-iconpos="top">Home</a></li>
+					<li><a href="#about" data-icon="star" data-iconpos="top">About Me</a></li>
+					<li><a href="#newsstream"  data-icon="grid" data-iconpos="top">Newsstream</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- Browse Page NOT CODED YET -->
+
+	<div data-role="page" id="browse" data-add-back-btn="true">	
+		<div data-role="header" data-position="fixed">
+			<h3>Browse Ideas</h3>
+		</div>
+		<div data-role="content">
+			<h3>This page not coded yet.</h3>
+		</div>
+		<div data-role="footer" data-id="navbar" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="star" data-iconpos="top">Home</a></li>
+					<li><a href="#about" data-icon="star" data-iconpos="top">About Me</a></li>
+					<li><a href="#newsstream"class="ui-btn-active" data-icon="grid" data-iconpos="top">Newsstream</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+<!-- Newsstream Page -->
+
+	<div data-role="page" id="newsstream" data-add-back-btn="true">	
+		<div data-role="header" data-position="fixed">
+			<h3>Newsstream</h3>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true">
+			    <li data-role="list-divider">Date Due: 11-11-2013 <span class="ui-li-count">3</span></li>
+			    <li>
+			        <h2>Idea Logger</h2>
+			        <p>Type: App  |  Importance: 7</p>
+			        <p>App that tracks ideas and phases throughout idea process</p>
+			    </li>
+			    <li>
+			        <h2>My House</h2>
+			        <p>Type: Domain  |  Importance: 9</p>
+			        <p>Potential future site, domain name idea now</p>
+			    </li>
+			    <li>
+			        <h2>frostme</h2>
+			        <p>Type: Domain  |  Importance: 6</p>
+			        <p>diamond lovers domain</p>
+			    </li>
+			    <li data-role="list-divider">Date Due: 12-12-2013 <span class="ui-li-count">2</span></li>
+			    <li>
+			        <h2>300 Blackout</h2>
+			        <p>Type: Website  |  Importance: 9</p>
+			        <p>Site dedicated to 300 blackout for IA</p>
+			    </li>
+			    <li>
+			        <h2>the blood gods</h2>
+			        <p>Type: Domain  |  Importance: 2</p>
+			        <p>world of warcraft fan site</p>
+			    </li>
+			</ul>
+		</div>
+		<div data-role="footer" data-id="navbar" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="star" data-iconpos="top">Home</a></li>
+					<li><a href="#about" data-icon="star" data-iconpos="top">About Me</a></li>
+					<li><a href="#newsstream"class="ui-btn-active" data-icon="grid" data-iconpos="top">Newsstream</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- About Me Page -->
+
+		<div data-role="page" id="about" data-add-back-btn="true">	
+		<div data-role="header" data-position="fixed">
+			<h3>About Me</h3>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider">Application Links</li>
+				<li><a href="#home" data-ajax="false">
+			        <img src="img/idealogger.gif" />
+			        <h2>Home Page</h2>
+			        <p>Lost, need to get to the home page?</p></a>
+			    </li>
+			</ul>
+			<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider">My GIT Links</li>
+				<li><a href="http://b39113.github.io/MIU/Tiffin_boyd_project2/Gold/index.html" data-ajax="false">
+			        <img src="img/gold.gif" />
+			        <h2>Gold Application</h2>
+			        <p>This is what I think works the best</p></a>
+			    </li>
+				<li><a href="http://b39113.github.io/MIU/Tiffin_boyd_project2/Bronze/index.html" data-ajax="false">
+			        <img src="img/bronze.gif">
+			        <h2>Bronze Application</h2>
+			        <p>This is demonstrating other views</p></a>
+			    </li>
+				<li><a href="https://github.com/b39113/MIU">
+			        <img src="img/base.gif">
+			        <h2>MIU 1311 Base Folder</h2>
+			        <p>All code for this month resides here</p></a>
+			    </li>
+			</ul>
+			<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider">Idea Logger Developer Links</li>
+				<li><a href="#boyd" data-transition="slide">
+			        <img src="img/tss.gif">
+			        <h2>Application Author</h2>
+			        <p>Want to know more?</p></a>
+			    </li>
+			</ul>
+		</div>
+		<div data-role="footer" data-id="navbar" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="star" data-iconpos="top">Home</a></li>
+					<li><a href="#about" class="ui-btn-active" data-icon="star" data-iconpos="top">About Me</a></li>
+					<li><a href="#newsstream" data-icon="grid" data-iconpos="top">Newsstream</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- About Boyd Drilldown -->
+
+	<div data-role="page" id="boyd" data-add-back-btn="true">	
+		<div data-role="header" data-position="fixed">
+			<h3>About The Author</h3>
+		</div>
+		<div data-role="content">
+			        <h2>Boyd Tiffin</h2>
+			        <p>I am a developer for The Sparks Solution in Des Moines, Iowa. This is my first application using jQM and have to say that it was a ton of fun to create!</p>
+			<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider">Idea Logger Developer Links</li>
+				<li><a href="http://thesparkssolution.com/blogs/" target=_blank data-ajax="false">
+			        <img src="img/tss.gif">
+			        <h2>Boyd's Blog Site</h2>
+			        <p>Want to read my mind?</p></a>
+			    </li>
+			</ul>
+		</div>
+		<div data-role="footer" data-id="navbar" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="star" data-iconpos="top">Home</a></li>
+					<li><a href="#about" data-icon="star" data-iconpos="top">About Me</a></li>
+					<li><a href="#newsstream" data-icon="grid" data-iconpos="top">Newsstream</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
