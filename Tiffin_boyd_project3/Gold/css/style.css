@@ -1,1 +1,18 @@
 /* write your CSS in here */
+
+.help{
+	font-size: small;
+	color: grey;
+}
+.required{
+	font-size: .9em;
+	color: red;
+}
+
+.cancel{
+	float: right;
+	text-align: right;
+	margin-top: 20px;
+	margin-right: 75px;
+	font-size: .9em;
+}
