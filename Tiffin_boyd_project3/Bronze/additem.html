@@ -36,11 +36,15 @@ Boyd Tiffin
 					<legend>Add Idea</legend>
 					<span class="required">* Required Fields</span>
 					<ul id="errors"></ul>
-						<input type="text" id="ideaTitle" placeholder="* Idea Title"/>
+						<label for="ideaTitle">*Idea Title:</label><br />
+						<input type="text" id="ideaTitle" placeholder="Website Hosting Application..."/><br />
+						<span class="help">Enter Full Title Above</span>
 						<br />
 						<label for="importance">*Money Making Potential:</label>
 						<br />
 						<input type="range" min="1" max="10" id="importance" />
+						<br />
+						<span class="help">Higher potential = higher number</span>
 						<br />
 						Choose One<br />
 							<input type="radio" name="ideaType" value="domain" /><label for="Domain">Domain</label>
@@ -49,10 +53,12 @@ Boyd Tiffin
 						<br />
 						<label for="dateDue">*Date Due:</label><input type="date" id="dateDue" />
 						<li id="select"><label for="status">*Current Status</label></li>
-						<textarea id="description" placeholder="* Full Details Here..."></textarea>
-						<input id="week" type="hidden" value="Week 1">
+						<label for="description">Idea Description:</label><br />
+						<textarea id="description" placeholder="* Full Details Here..."></textarea><br />
+						<span class="help">Enter all project details above</span>
 				</fieldset>
 				<input id="butSubmit" type="submit" value="Log Idea Now" />
+				<span class="cancel"><a href="./index.html" data-ajax="false">cancel</a></span>
 			</form>
 		</section>
 		</div>
