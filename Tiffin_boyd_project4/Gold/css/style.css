@@ -2,7 +2,7 @@
 
 .help{
 	font-size: small;
-	color: grey;
+	color: white;
 }
 .required-text{
 	font-size: .9em;
@@ -11,9 +11,12 @@
 
 .cancel{
 	float: right;
-	text-align: right;
 	margin-top: 20px;
 	margin-right: 75px;
 	font-size: .9em;
-	color: black;
+}
+
+.errors{
+	color: red;
+	font-size: small;
 }

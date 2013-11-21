@@ -170,6 +170,7 @@ function validate(e){
 	if(messageAry.length >= 1){
 		for(var i = 0, j=messageAry.length; i<j; i++){
 			var txt = document.createElement('li');
+			txt.setAttribute("class", "errors");
 			txt.innerHTML = messageAry[i];
 			errMsg.appendChild(txt);
 		}
