@@ -4,7 +4,7 @@
 	font-size: small;
 	color: grey;
 }
-.required{
+.required-text{
 	font-size: .9em;
 	color: red;
 }
@@ -15,4 +15,5 @@
 	margin-top: 20px;
 	margin-right: 75px;
 	font-size: .9em;
+	color: black;
 }

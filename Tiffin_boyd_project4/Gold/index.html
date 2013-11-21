@@ -16,6 +16,7 @@
 	
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<link rel="stylesheet" href="css/MIU.min.css" />
 	
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -28,15 +29,18 @@
 
 	<div data-role="page" id="home">
 		<div data-role="header">
-			<h3>Idea Logger</h3>
+			<div class="ui-bar ui-bar-a">
+			    <img src="img/Logo.gif" height="30px" align="left"/>
+			    <center><h3 style="padding-top:5px;">Idea Logger</h3></center>
+			</div>
 		</div>
 		<div data-role="content">
 			<div>
 				<center><a href="additem.html" data-ajax="false"><img src="img/CTA.gif" /></a></center>
 			</div>
 			<br />
-			<div id="cont-search">
-				<ul id="prelist" data-inset="true" data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search ideas by...">
+			<div id="cont-search" data-theme="a">
+				<ul data-role="listview" data-theme="a" data-inset="true" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search ideas by...">
 					<li><a href="#browse">Money Potential</a></li>
 					<li><a href="#browse">Idea Type</a></li>
 					<li><a href="#browse">Current Status</a></li>
@@ -68,9 +72,13 @@
 	</div>
 <!-- Browse Page NOT CODED YET -->
 
-	<div data-role="page" id="browse" data-add-back-btn="true">	
-		<div data-role="header" data-position="fixed">
-			<h3>Browse Ideas</h3>
+	<div data-role="page" id="browse">	
+		<div data-role="header">
+			<div class="ui-bar ui-bar-a">
+			    <img src="img/Logo.gif" height="30px" align="left"/>
+			    <center><h3 style="padding-top:5px;">Browse Ideas</h3></center>
+			    <a href="#home" data-role="button" data-icon="home" data-iconshadow="false" data-direction="reverse" class="ui-btn-right">home</a>
+			</div>
 		</div>
 		<div data-role="content">
 			<h3>This page not coded yet.</h3>
@@ -78,7 +86,7 @@
 		<div data-role="footer" data-id="navbar" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" data-icon="star" data-iconpos="top">Home</a></li>
+					<li><a data-rel="back" href="#home" data-icon="arrow-l" data-iconpos="top">Back</a></li>
 					<li><a href="#about" data-icon="star" data-iconpos="top">About Me</a></li>
 					<li><a href="#newsstream"class="ui-btn-active" data-icon="grid" data-iconpos="top">Newsstream</a></li>
 				</ul>
@@ -90,8 +98,12 @@
 <!-- Newsstream Page -->
 
 	<div data-role="page" id="newsstream" data-add-back-btn="true">	
-		<div data-role="header" data-position="fixed">
-			<h3>Newsstream</h3>
+		<div data-role="header">
+			<div class="ui-bar ui-bar-a">
+			    <img src="img/Logo.gif" height="30px" align="left"/>
+			    <center><h3 style="padding-top:5px;">NewsStream</h3></center>
+			    <a href="#home" data-role="button" data-icon="home" data-iconshadow="false" data-direction="reverse" class="ui-btn-right">home</a>
+			</div>
 		</div>
 		<div data-role="content">
 			<ul data-role="listview" data-inset="true">
@@ -127,7 +139,7 @@
 		<div data-role="footer" data-id="navbar" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" data-icon="star" data-iconpos="top">Home</a></li>
+					<li><a data-rel="back" href="#home" data-icon="arrow-l" data-iconpos="top">Back</a></li>
 					<li><a href="#about" data-icon="star" data-iconpos="top">About Me</a></li>
 					<li><a href="#newsstream"class="ui-btn-active" data-icon="grid" data-iconpos="top">Newsstream</a></li>
 				</ul>
@@ -179,7 +191,7 @@
 		<div data-role="footer" data-id="navbar" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" data-icon="star" data-iconpos="top">Home</a></li>
+					<li><a data-rel="back" href="#home" data-icon="arrow-l" data-iconpos="top">Back</a></li>
 					<li><a href="#about" class="ui-btn-active" data-icon="star" data-iconpos="top">About Me</a></li>
 					<li><a href="#newsstream" data-icon="grid" data-iconpos="top">Newsstream</a></li>
 				</ul>
@@ -207,7 +219,7 @@
 		<div data-role="footer" data-id="navbar" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" data-icon="star" data-iconpos="top">Home</a></li>
+					<li><a data-rel="back" href="#home" data-icon="arrow-l" data-iconpos="top">Back</a></li>
 					<li><a href="#about" data-icon="star" data-iconpos="top">About Me</a></li>
 					<li><a href="#newsstream" data-icon="grid" data-iconpos="top">Newsstream</a></li>
 				</ul>

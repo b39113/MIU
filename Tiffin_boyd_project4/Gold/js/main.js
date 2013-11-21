@@ -15,7 +15,16 @@ $('#addItem').on('pageinit', function(){
 	});
 	
 	//any other code needed for addItem page goes here
+
+});
+var parseMyForm = function(data){
 	
+	console.log(data);
+};
+
+$(document).ready(function(){
+	var mfform = $('#addForm');
+	mfform.validate();
 });
 
 //The functions below can go inside or outside the pageinit function for the page in which it is needed.
